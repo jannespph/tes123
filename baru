@@ -1,0 +1,53 @@
+import 'package:flutter/material.dart';
+
+class Homepage extends StatelessWidget {
+  const Homepage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Jannes Pakpahan"),
+      ),
+      body: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              'Louis dan Eurora',
+              style: TextStyle(
+                color: Colors.blue,
+                fontSize: 30,
+              ),
+            ),
+
+            SizedBox(height: 20),
+
+            ListTile(
+              title: Text('1'),
+            ),
+
+            ListTile(
+              title: Text("halaala"),
+              leading: Icon(Icons.mail),
+            ),
+
+            Divider(height: 0.2),
+
+            ListTile(
+              title: Text('Primary'),
+            ),
+
+            ListTile(
+              title: Text('Social'),
+            ),
+
+            ListTile(
+              title: Text('Promotions'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
